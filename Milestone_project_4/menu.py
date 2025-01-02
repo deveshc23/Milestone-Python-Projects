@@ -7,7 +7,7 @@ USER_CHOICE="""Enter one of the following:
 -'q' to exit
 """
 def print_best_books():
-    best_books=sorted(books,key=lambda x: (x.rating*-1,x.price))[:10]
+    best_books=sorted(books,key=lambda x: x.rating*-1)[:10]
     for book in best_books:
         print(book)
 
